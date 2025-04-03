@@ -99,7 +99,7 @@ public class Eligiblityinq_Controller {
 
 
    
- @GetMapping("/api/v1/get_documents")
+@GetMapping("/api/v1/get_documents")
 public ResponseEntity<byte[]> getDocument(@RequestParam Integer id, @RequestParam String docType) {
     List<Map<String, Object>> docs = inq_service.getDocuments(id);
 
